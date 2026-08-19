@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventNova — Discover. Book. Experience.</title>
+  <meta name="description" content="EventNova is a modern event discovery and ticket booking platform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><span class="brand-mark">E</span> EventNova</a>
+  <nav id="mainNav">
+    <a class="active" href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="#categories">Categories</a>
+    <a href="#experiences">Experiences</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeToggle" title="Toggle dark mode">◐</button>
+    <a class="btn btn-outline" href="login.html">Login</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">THE CITY'S EVENT DISCOVERY PLATFORM</span>
+    <h1>Discover experiences<br><em>that inspire.</em></h1>
+    <p>Concerts, technology summits, workshops, festivals and unforgettable experiences — all in one place.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="events.html">Explore Events →</a>
+      <a class="btn btn-glass" href="events.html?type=host">Host an Event</a>
+    </div>
+    <div class="hero-search">
+      <span>⌕</span><input id="homeSearch" placeholder="Search events, artists or venues..."><button onclick="searchFromHome()">Search</button>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><strong>50K+</strong><span>Attendees</span></div>
+    <div><strong>1,200+</strong><span>Events</span></div>
+    <div><strong>350+</strong><span>Organizers</span></div>
+    <div><strong>25+</strong><span>Cities</span></div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>Find your kind of <em>experience.</em></h2></div><a href="events.html">View all →</a></div>
+  <div class="category-grid">
+    <a class="category-card" href="events.html?category=Music"><span>♫</span><b>Music</b><small>Concerts & live shows</small></a>
+    <a class="category-card" href="events.html?category=Technology"><span>⌘</span><b>Technology</b><small>Summits & innovation</small></a>
+    <a class="category-card" href="events.html?category=Arts"><span>✦</span><b>Arts & Culture</b><small>Art, theatre & design</small></a>
+    <a class="category-card" href="events.html?category=Workshop"><span>◈</span><b>Workshops</b><small>Learn by doing</small></a>
+    <a class="category-card" href="events.html?category=Business"><span>◎</span><b>Business</b><small>Network & grow</small></a>
+    <a class="category-card" href="events.html?category=Festival"><span>✺</span><b>Festivals</b><small>Celebrate together</small></a>
+  </div>
+</section>
+
+<section class="section tinted">
+  <div class="section-head"><div><span class="eyebrow">CURATED FOR YOU</span><h2>Featured <em>events.</em></h2></div><a href="events.html">See all events →</a></div>
+  <div id="featuredEvents" class="event-grid"></div>
+</section>
+
+<section class="section" id="experiences">
+  <div class="section-head"><div><span class="eyebrow">GO BEYOND THE ORDINARY</span><h2>Immersive <em>experiences.</em></h2></div></div>
+  <div class="experience-grid">
+    <article><div class="experience-art retro">90s</div><div><span>IMMERSIVE THEME</span><h3>Retro & Futuristic Worlds</h3><p>Neon nights, projection mapping and time-travel inspired environments.</p></div></article>
+    <article><div class="experience-art eco">01</div><div><span>CONSCIOUS DESIGN</span><h3>Eco Experiences</h3><p>Plant walls, upcycled decor and memorable low-waste experiences.</p></div></article>
+    <article><div class="experience-art social">∞</div><div><span>INTERACTIVE</span><h3>Gamified Networking</h3><p>AR hunts, trivia, silent discos and hands-on workshops.</p></div></article>
+    <article><div class="experience-art food">✦</div><div><span>TASTE THE MOMENT</span><h3>Interactive Food</h3><p>Food truck alleys, dessert art bars and DIY tasting stations.</p></div></article>
+  </div>
+</section>
+
+<section class="cta">
+  <div><span class="eyebrow">FOR ORGANIZERS</span><h2>Turn your idea into an<br><em>experience.</em></h2><p>Create events, manage attendees and track performance from one dashboard.</p></div>
+  <a class="btn btn-light" href="admin.html">Open Organizer Dashboard →</a>
+</section>
+</main>
+
+<footer class="footer">
+  <div><div class="brand footer-brand"><span class="brand-mark">E</span> EventNova</div><p>Discover. Book. Experience.</p></div>
+  <div><b>Platform</b><a href="events.html">Events</a><a href="tickets.html">My Tickets</a><a href="wishlist.html">Wishlist</a></div>
+  <div><b>Company</b><a href="#">About</a><a href="#">Contact</a><a href="#">Privacy</a></div>
+  <div><b>Connect</b><p>Instagram · LinkedIn · X</p><p>hello@eventnova.demo</p></div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>
